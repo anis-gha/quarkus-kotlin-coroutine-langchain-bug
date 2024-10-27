@@ -11,7 +11,7 @@ class ScanTextService(
     private val logger = Logger.getLogger(this::class.java)
 
     override suspend fun processScan(scan: Scan) {
-        val result = chatModelService.request("Hello")
+        val result = chatModelService.request("Where is located Paris ?")
 
         logger.info("Scan ${scan.id} processed, result: $result")
     }

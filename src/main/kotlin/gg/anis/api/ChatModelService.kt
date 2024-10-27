@@ -8,7 +8,7 @@ import jakarta.enterprise.context.ApplicationScoped
 @RegisterAiService(chatMemoryProviderSupplier = RegisterAiService.NoChatMemoryProviderSupplier::class)
 interface ChatModelService {
 
-    @UserMessage("Where is located Paris ?")
+    @UserMessage("Answer the question")
     fun request(message: String): String
 
 }
